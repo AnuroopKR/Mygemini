@@ -5,7 +5,7 @@ import { assets } from "../../assets/assets";
 const Sidebar = () => {
     const [extended,setExtended]=useState(false)
   return (
-    <div className="sidebar">
+<div className="sidebar" style={extended ? { minWidth: "230px" } : {}}>
       <div className="top">
         <img className="menu" 
         onClick={()=>setExtended(!extended)}
